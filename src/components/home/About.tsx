@@ -3,7 +3,7 @@ import { Element } from 'react-scroll';
 
 export default function About() {
   return (
-    <Element name="about">
+    <Element name="About">
       <section className="about">
         <h2> About me</h2>
         <section className="description">
@@ -12,7 +12,21 @@ export default function About() {
             Front-end developer position where I can learn and grow at different
             levels.
           </p>
-          <p> With experience in JavaScript, React, Nest and Git.</p>
+          <p className="experience"> With experience in</p>
+          <div className="skills">
+            <img src={require('./img/js.png')} alt="javascript" />
+            <img src={require('./img/ts.png')} alt="typescript" />
+            <img src={require('./img/html.png')} alt="html" />
+            <img src={require('./img/css.png')} alt="css" />
+            <img src={require('./img/sass.png')} alt="sass" />
+            <img src={require('./img/react.png')} alt="react" />
+            <img src={require('./img/jest.png')} alt="jest" />
+            <img src={require('./img/git.png')} alt="git" />
+            <img src={require('./img/mongoDb.png')} alt="mongoDb" />
+            <img src={require('./img/angular.png')} alt="angular" />
+            <img src={require('./img/jasmine.png')} alt="jasmine" />
+          </div>
+
           <p>
             I was formed at prestigious Skylab coder academy, and know I'm
             looking forward to keep growing and helping companies to reach their
@@ -22,11 +36,20 @@ export default function About() {
             Really confortable being part of a team, good communicator always
             trying to help as much as I can to the rest of the team members.
           </p>
-          <p>
-            - Good practices - Code quality and good code standards - Team
-            player - Self-taught and not afraid to face new challengues. This is
-            my github profile: https://github.com/adrianCaleroBarrero
-          </p>
+          <ul>
+            <li>
+              <span>-</span> Good practices
+            </li>
+            <li>
+              <span>-</span> Code quality and good code standards
+            </li>
+            <li>
+              <span>-</span> Team player{' '}
+            </li>
+            <li>
+              <span>-</span> Self-taught and not afraid to face new challengues
+            </li>
+          </ul>
         </section>
       </section>
     </Element>
