@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { SyntheticEvent } from 'react';
 import { Link, animateScroll as scroll, scroller } from 'react-scroll';
 
 export const Header = () => {
-  function scrollTo() {
-    scroller.scrollTo('about', {
+  function scrollTo(e: SyntheticEvent) {
+    const element = e.target as HTMLElement;
+    scroller.scrollTo(element.innerText, {
       duration: 800,
       delay: 0,
       smooth: 'easeInOutQuart',
@@ -16,13 +17,15 @@ export const Header = () => {
           <a onClick={scrollTo}>About</a>
         </li>
         <li>
-          <a>My Projects</a>
+          <a onClick={scrollTo}>My Projects</a>
         </li>
         <li>
-          <a>Contact</a>
+          <a onClick={scrollTo}>Contact</a>
         </li>
         <li>
-          <a className="resume">Resume</a>
+          <a className="resume" href={require('./files/cv.pdf')} download>
+            Resume
+          </a>
         </li>
       </ul>
       <section className="introduction">
