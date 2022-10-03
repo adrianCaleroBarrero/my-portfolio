@@ -20,10 +20,12 @@ export const Header = () => {
           <a onClick={scrollTo}>My Projects</a>
         </li>
         <li>
-          <a>Contact</a>
+          <a onClick={scrollTo}>Contact</a>
         </li>
         <li>
-          <a className="resume">Resume</a>
+          <a className="resume" href={require('./files/cv.pdf')} download>
+            Resume
+          </a>
         </li>
       </ul>
       <section className="introduction">
