@@ -36,7 +36,7 @@ export default function About() {
             Really confortable being part of a team, good communicator always
             trying to help as much as I can to the rest of the team members.
           </p>
-          <ul>
+          <ul className="soft-skills">
             <li>
               <span>-</span> Good practices
             </li>
@@ -44,13 +44,26 @@ export default function About() {
               <span>-</span> Code quality and good code standards
             </li>
             <li>
-              <span>-</span> Team player{' '}
+              <span>-</span> Team player
             </li>
             <li>
               <span>-</span> Self-taught and not afraid to face new challengues
             </li>
           </ul>
         </section>
+        <div className="cv-container">
+          <p>If you want to know more about me, </p>
+          <p className="check">
+            Check my
+            <a
+              className="cv"
+              href={require('./files/cv.pdf')}
+              download="AdrianCaleroCV"
+            >
+              <img src={require('./img/cv.png')} alt="cv" />
+            </a>
+          </p>
+        </div>
       </section>
     </Element>
   );
