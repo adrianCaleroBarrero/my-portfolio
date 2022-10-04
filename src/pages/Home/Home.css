@@ -30,6 +30,10 @@ header ul {
 
 }
 
+header .cv {
+    display: none;
+}
+
 li {
     list-style: none;
 
@@ -129,6 +133,10 @@ span {
     color: #FCA311;
 }
 
+.cv-container {
+    display: none;
+}
+
 .description {
     margin-left: 2rem;
     display: flex;
@@ -212,7 +220,7 @@ span {
 
 .contact-me {
     background-color: #14213D;
-    width: 8rem;
+    width: 10rem;
     height: 4rem;
     display: flex;
     text-align: center;
@@ -264,60 +272,54 @@ span {
         justify-content: flex-end;
     }
 
-    header nav button {
-        display: initial;
-        background: none;
-        border: none;
-        width: 3rem;
-        margin-right: 3rem;
-        margin-top: 3%;
-    }
 
-    header nav button img {
-        width: 4rem;
-    }
+
+
 
     header nav ul {
         display: none;
     }
 
-    .vertical-menu a {
-        text-decoration: none;
-        font-size: x-large;
+    .introduction {
+        justify-content: space-around;
     }
 
-    .menu .vertical-menu:focus {
-        display: none;
 
-    }
 
-    .menu:focus .vertical-menu {
-        position: absolute;
-        left: 0;
-        margin: 0;
-        padding: 0;
+    .cv-container {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        width: 100%;
-        height: 60vh;
-        background-color: #000000;
+
+    }
+
+    .cv-container .check {
+        color: #FCA311;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .skills {
         display: grid;
-        grid-template-columns: 5rem 5rem 5rem 5rem;
-        grid-template-rows: 5rem 5rem 5rem;
+        align-self: center;
+        grid-template-columns: 5rem 5rem 5rem;
+        grid-template-rows: 5rem 5rem 5rem 5rem;
     }
 
     .about {
         text-align: center;
-        height: 140vh;
+        height: 200vh;
     }
 
     .description {
         width: 80%;
     }
+
+    .description .soft-skills {
+        display: flex;
+        align-items: flex-start;
+    }
+
 
 
 }
