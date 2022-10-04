@@ -4,6 +4,8 @@ import { Link, animateScroll as scroll, scroller } from 'react-scroll';
 export const Header = () => {
   function scrollTo(e: SyntheticEvent) {
     const element = e.target as HTMLElement;
+    console.log(e);
+
     scroller.scrollTo(element.innerText, {
       duration: 800,
       delay: 0,
@@ -13,28 +15,6 @@ export const Header = () => {
   return (
     <header>
       <nav>
-        <li>
-          <button className="menu">
-            <img src={require('./img/menu.png')} alt="menu" />
-            <ul className="vertical-menu">
-              <li>
-                <a onClick={scrollTo}>About</a>
-              </li>
-              <li>
-                <a onClick={scrollTo}>My Projects</a>
-              </li>
-              <li>
-                <a onClick={scrollTo}>Contact</a>
-              </li>
-              <li>
-                <a href={require('./files/cv.pdf')} download>
-                  Resume
-                </a>
-              </li>
-            </ul>
-          </button>
-        </li>
-
         <ul>
           <li>
             <a onClick={scrollTo}>About</a>
