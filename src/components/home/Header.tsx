@@ -12,22 +12,47 @@ export const Header = () => {
   }
   return (
     <header>
-      <ul>
+      <nav>
         <li>
-          <a onClick={scrollTo}>About</a>
+          <button className="menu">
+            <img src={require('./img/menu.png')} alt="menu" />
+            <ul className="vertical-menu">
+              <li>
+                <a onClick={scrollTo}>About</a>
+              </li>
+              <li>
+                <a onClick={scrollTo}>My Projects</a>
+              </li>
+              <li>
+                <a onClick={scrollTo}>Contact</a>
+              </li>
+              <li>
+                <a href={require('./files/cv.pdf')} download>
+                  Resume
+                </a>
+              </li>
+            </ul>
+          </button>
         </li>
-        <li>
-          <a onClick={scrollTo}>My Projects</a>
-        </li>
-        <li>
-          <a onClick={scrollTo}>Contact</a>
-        </li>
-        <li>
-          <a className="resume" href={require('./files/cv.pdf')} download>
-            Resume
-          </a>
-        </li>
-      </ul>
+
+        <ul>
+          <li>
+            <a onClick={scrollTo}>About</a>
+          </li>
+          <li>
+            <a onClick={scrollTo}>My Projects</a>
+          </li>
+          <li>
+            <a onClick={scrollTo}>Contact</a>
+          </li>
+          <li>
+            <a className="resume" href={require('./files/cv.pdf')} download>
+              Resume
+            </a>
+          </li>
+        </ul>
+      </nav>
+
       <section className="introduction">
         <p>Hi, I'm</p>
         <h1>
