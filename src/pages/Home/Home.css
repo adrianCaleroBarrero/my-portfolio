@@ -109,18 +109,27 @@ span {
 }
 
 .about {
-    height: 115vh;
+    height: 125vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
+.photo img {
+    width: 50vh;
+    border-radius: 1rem;
 
+}
 
 .about h2,
 .about p {
     color: #000000;
     font-size: larger
+}
+
+.about-contain {
+    display: flex;
+    justify-content: space-around;
 }
 
 .about h2 {
@@ -141,7 +150,7 @@ span {
     margin-left: 2rem;
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
 }
 
 .description ul {
@@ -308,7 +317,17 @@ span {
 
     .about {
         text-align: center;
-        height: 200vh;
+        height: 250vh;
+    }
+
+    .about-contain {
+        flex-direction: column;
+    }
+
+
+    .photo img {
+        width: 35vh;
+        clip-path: circle(33.6% at 50% 35%);
     }
 
     .description {
