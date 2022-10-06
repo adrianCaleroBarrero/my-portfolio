@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
 header {
     background-color: #000000;
     display: flex;
@@ -197,6 +199,38 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.myProject-container {
+    display: flex;
+    justify-content: center;
+}
+
+.myProject .card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 15vh;
+    border: 0.15rem solid #E5E5E5;
+    border-radius: 1rem;
+}
+
+.card-skill {
+    width: 10%;
+}
+
+.myProject .card:hover {
+    box-shadow: #FCA311 0px 3px 8px;
+    border: 0.15rem solid #FCA311;
+    transition: 0.6s;
+
+}
+
+.myProject .card h3 {
+    color: #ffffff;
+    font-size: x-large;
+    font-family: 'Titan One', cursive;
 }
 
 .myProject a img {
