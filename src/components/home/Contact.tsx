@@ -6,8 +6,9 @@ export default function Contact() {
     <Element name="Contact" className="contact">
       <h2>Contact with me</h2>
       <p>
-        I’m always looking for new oportunities.If you want to know more about
-        me, do not hesitate to contact me and have a chat with me.
+        I’m always looking for new oportunities.if you would like to find out
+        more about my work, do not hesitate to contact me and have a chat with
+        me.
       </p>
       <a
         className="contact-me"
