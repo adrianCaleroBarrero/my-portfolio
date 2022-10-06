@@ -15,8 +15,6 @@ export default function Contact() {
         href="mailto:adriancalerobarrero@gmail.com?subject=Contact"
       >
         <p>Contact !</p>
-
-        <img src={require('./img/send.png')} className="contact-me__png" />
       </a>
       <a href="https://www.linkedin.com/in/adrian-calero-barrero-310036197/">
         <img src={require('./img/linkedin.gif')} />

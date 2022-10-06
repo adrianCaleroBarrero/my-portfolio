@@ -152,6 +152,7 @@ span {
     margin-left: 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     width: 50%;
 }
 
@@ -262,45 +263,32 @@ span {
 }
 
 .contact-me {
-    background-color: #14213D;
+    background-color: #E5E5E5;
     width: 10rem;
     height: 4rem;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    border: 0.2rem solid #FCA311;
     border-radius: 0.6rem;
     text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .contact-me p {
-    color: #FCA311;
+    color: #14213D;
 }
 
-.contact-me .contact-me__png {
-    width: 4rem;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.4s ease-out;
-}
 
-.contact-me:hover p {
-    display: none;
-    transition: 0.7s;
-}
+
 
 .contact-me:hover {
-    border: none;
-    background-color: transparent;
+    box-shadow: none;
+    transition: 0.7s;
 
 }
 
-.contact-me:hover .contact-me__png {
-    opacity: 1;
-    transition: 1s;
 
-}
 
 @media only screen and (max-width: 600px) {
 
@@ -351,7 +339,12 @@ span {
 
     .about {
         text-align: center;
-        height: 250vh;
+        justify-content: flex-start;
+        height: 230vh;
+    }
+
+    .about h2 {
+        margin-bottom: 5rem;
     }
 
     .about-contain {
@@ -361,7 +354,7 @@ span {
 
     .photo img {
         width: 35vh;
-        clip-path: circle(33.6% at 50% 35%);
+        clip-path: ellipse(45% 36% at 51% 36%);
     }
 
     .description {
@@ -371,6 +364,10 @@ span {
     .description .soft-skills {
         display: flex;
         align-items: flex-start;
+    }
+
+    .myProject .card {
+        width: 85%;
     }
 
 
