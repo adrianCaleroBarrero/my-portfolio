@@ -34,8 +34,9 @@ export default function About() {
               their goals in software development.
             </p>
             <p>
-              Really confortable being part of a team, good communicator always
-              trying to help as much as I can to the rest of the team members.
+              I'm Really comfortable being part of a team, I'm good communicator
+              always trying to help as much as I can to the rest of the team
+              members.
             </p>
             <ul className="soft-skills">
               <li>

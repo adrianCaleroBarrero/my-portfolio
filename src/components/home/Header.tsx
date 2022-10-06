@@ -26,7 +26,11 @@ export const Header = () => {
             <a onClick={scrollTo}>Contact</a>
           </li>
           <li>
-            <a className="resume" href={require('./files/cv.pdf')} download>
+            <a
+              className="resume"
+              href={require('./files/cv.pdf')}
+              download="AdrianCaleroCV"
+            >
               Resume
             </a>
           </li>
@@ -38,10 +42,10 @@ export const Header = () => {
         <h1>
           <span>&lt;</span> Adrian Calero <span>/ &gt;</span>
         </h1>
-        <h2>I create this website</h2>
+        <h2>I've created this website</h2>
         <p>
           I'm a software enginner, who loves programming, fixing code problems
-          while learning and teamwork.
+          while learning and working as a team.
         </p>
       </section>
     </header>
