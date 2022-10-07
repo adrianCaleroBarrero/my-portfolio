@@ -111,14 +111,19 @@ span {
 }
 
 .about {
-    height: 125vh;
+    height: 145vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
+.photo {
+    width: 40%;
+    overflow: hidden;
+}
+
 .photo img {
-    width: 50vh;
+    width: 85%;
     border-radius: 1rem;
 
 }
@@ -172,12 +177,14 @@ span {
 
 .skills {
     display: grid;
-    grid-template-columns: 5rem 5rem 5rem 5rem 5rem 5rem;
-    grid-template-rows: 5rem 5rem;
+    grid-row-gap: 1rem;
+    justify-items: center;
+    grid-template-columns: 25% 25% 25% 25%;
+
 }
 
 .skills img {
-    width: 6vh;
+    width: 50%;
 }
 
 .myProject {
@@ -211,10 +218,12 @@ span {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 40%;
+    width: 65%;
     height: 15vh;
     border: 0.15rem solid #E5E5E5;
     border-radius: 1rem;
+    box-shadow: rgba(254, 254, 254, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+
 }
 
 .card-skill {
@@ -332,7 +341,8 @@ span {
 
     .skills {
         display: grid;
-        align-self: center;
+        align-items: center;
+        justify-content: center;
         grid-template-columns: 5rem 5rem 5rem;
         grid-template-rows: 5rem 5rem 5rem 5rem;
     }
@@ -340,7 +350,7 @@ span {
     .about {
         text-align: center;
         justify-content: flex-start;
-        height: 250vh;
+        height: 265vh;
     }
 
     .about h2 {
@@ -351,9 +361,15 @@ span {
         flex-direction: column;
     }
 
+    .photo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
 
     .photo img {
-        width: 35vh;
+        width: 60%;
         clip-path: ellipse(45% 36% at 51% 36%);
     }
 
@@ -367,7 +383,12 @@ span {
     }
 
     .myProject .card {
-        width: 85%;
+        width: 95%;
+        height: 90%;
+    }
+
+    .myProject .card h3 {
+        font-size: large;
     }
 
 
