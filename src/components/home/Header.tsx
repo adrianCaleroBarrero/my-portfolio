@@ -44,7 +44,7 @@ export const Header = () => {
         </h1>
         <h2>I've created this website</h2>
         <p>
-          I'm a software enginner, who loves programming, fixing code problems
+          I'm a software developer, who loves programming, fixing code problems
           while learning and working as a team.
         </p>
       </section>
