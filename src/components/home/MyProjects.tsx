@@ -5,7 +5,6 @@ import Card from '../core/Card';
 export default function MyProjects() {
   const openInNewTab = (url: string): void => {
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
-    if (newWindow) newWindow.opener = null;
   };
   return (
     <Element name="My Projects">
@@ -21,6 +20,7 @@ export default function MyProjects() {
         <p>
           Look more in detail of my code :
           <img
+            data-testid="github"
             src={require('./img/github.png')}
             onClick={() =>
               openInNewTab('https://github.com/adrianCaleroBarrero')
