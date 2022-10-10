@@ -14,7 +14,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.1",
-    "react-scripts": "^2.1.3",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.7",
     "react-select": "^5.4.0",
     "typescript": "^4.8.4",
@@ -24,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test-all": "npm test -- --collect-coverage --watchAll"
   },
   "eslintConfig": {
     "extends": [
@@ -46,5 +47,19 @@
   },
   "devDependencies": {
     "@types/react-scroll": "^1.8.4"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!src/App.tsx",
+      "!src/index.tsx",
+      "!src/models/*.ts",
+      "!src/services/test-utils.tsx",
+      "!src/serviceWorker.ts",
+      "!src/reportWebVitals.ts",
+      "!src/redux/**/action.types.ts",
+      "!src/interfaces/*.ts",
+      "!src/react-app-env.d.ts"
+    ]
   }
 }

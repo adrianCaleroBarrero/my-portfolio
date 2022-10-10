@@ -4,7 +4,6 @@ import { Link, animateScroll as scroll, scroller } from 'react-scroll';
 export const Header = () => {
   function scrollTo(e: SyntheticEvent) {
     const element = e.target as HTMLElement;
-    console.log(e);
 
     scroller.scrollTo(element.innerText, {
       duration: 800,
