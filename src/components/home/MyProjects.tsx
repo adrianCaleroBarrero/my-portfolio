@@ -16,6 +16,11 @@ export default function MyProjects() {
             link="https://github.adriancalero.dev/"
             skill="angular"
           />
+          <Card
+            title="Pokedex"
+            link="https://pokedex.adriancalero.dev/"
+            skill="react"
+          />
         </div>
         <p>
           Look more in detail of my code :
